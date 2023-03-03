@@ -1,0 +1,103 @@
+.header{
+    display: flex;
+  }
+  
+  #toggle-nav{
+    margin-left: 200px;
+  }
+  
+  .search-container{
+    display: inline;
+    margin-left: 300px;
+    vertical-align: middle;
+  }
+  
+  .search-container a {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .search-container input[type=text] {
+    padding: 30px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: 1px; color: black;
+  }
+  
+  .search-container button {
+    vertical-align: center;
+    align-items: center;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: rgb(255, 254, 254);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background: #ccc;
+  }
+  
+  #logo{
+    padding: 10px;
+    display:inline;
+  }
+  
+  nav{
+      display: inline-block;
+      text-align: center;
+      width: 1440px;
+      background-color: #D75252;
+      padding: 10px
+  }
+  
+  nav ul{
+      display: inline;
+      text-decoration: none;
+  }
+  
+  nav li{
+      display: inline;
+      font-family: 'myfont';
+      flex: 0;
+  }
+  
+  nav a{
+      margin: 30px;
+      font-size: x-large;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+  }
+  
+  a:hover{
+      color: #eeff00;
+      -webkit-text-stroke-width: .5px;
+      -webkit-text-stroke-color: black;
+  }
+  
+  h1{
+    text-align: left;
+    margin-left: 200px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .search-container {
+      float: none;
+    }
+  
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+    .logo{
+      display: inline;
+    }
+    .header{
+      display: block;
+    }
+    
+  }

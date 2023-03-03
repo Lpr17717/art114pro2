@@ -1,15 +1,54 @@
----
----
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/pages/pro2styles.css">
+    <link rel="icon" type ="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content = {Astro.generator} >
+    <title>InterestNews: Home</title>
+  </head>
+
+  <header class="header">
+
+      <div><a id="logo" href="index.html"rel="nav"><img src="src/pages/imgspro2/InterestNewsLogo.svg" alt="Interest News Logo"></a>
+      </div>
+
+      <div class="search-container"><form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    <div><img id="toggle-nav" src="src/pages/imgspro2/menuicon.svg" alt="hamburger"></div>
+</header>
+
+  <body>
+    <main>
+      <nav>
+      <ul>
+      <li><a href="health.astro"rel="nav">Health</a></li>
+      <li><a href="business.astro"rel="nav">Business</a></li>
+      <li><a href="transportation.astro"rel="nav">Transportation</a></li>
+      <li><a href="politics.astro"rel="nav">Politics</a></li>
+      <li><a href="education.astro"rel="nav">Education</a></li>
+      </ul>
+      </nav>
+    </main>
+
+  <div>
+    <h1>Featured News</h1>
+
+    <article>
+      <h2>Business "Final-ly” went bankrupt</h2>
+
+Final-ly, a once-promising startup that aimed
+to disrupt the funeral industry, has filed for
+bankruptcy. The company, which launched just
+three years ago, had raised over $10 million
+in funding and had garnered significant attention
+in the tech world.
+    </article>
+  </div>
+  
+  </body>
 </html>
