@@ -9,20 +9,21 @@
     <title>InterestNews: Home</title>
   </head>
 
-  <header class="header">
+  <header class="top-nav">
 
       <div><a id="logo" href="index.html"rel="nav"><img src="src/pages/imgspro2/InterestNewsLogo.svg" alt="Interest News Logo"></a>
       </div>
-
+      <button><img id="toggle-nav" src="src/pages/imgspro2/menuicon.svg" alt="hamburger"></button>
+    
       <div class="search-container"><form action="/action_page.php">
         <input type="text" placeholder="Search.." name="search">
         <button type="submit"><i class="fa fa-search"></i></button>
       </form>
-    </div>
-    <div><img id="toggle-nav" src="src/pages/imgspro2/menuicon.svg" alt="hamburger"></div>
+      </div>
 </header>
 
-  <body>
+  <body class="">
+
     <main>
       <nav>
       <ul>
@@ -31,6 +32,7 @@
       <li><a href="transportation.astro"rel="nav">Transportation</a></li>
       <li><a href="politics.astro"rel="nav">Politics</a></li>
       <li><a href="education.astro"rel="nav">Education</a></li>
+      <li><a href="logout.astro"rel="nav">Logout</a></li>
       </ul>
       </nav>
     </main>
@@ -49,6 +51,14 @@ in funding and had garnered significant attention
 in the tech world.
     </article>
   </div>
+
+  <script>
+    const navToggleBtn = document.getElementById('toggle-nav')
+    
+    navToggleBtn.addEventListener('click', function (){
+      document.body.classList.toggle('nav-open')
+    })
+  </script>
   
   </body>
 </html>

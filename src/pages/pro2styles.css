@@ -1,9 +1,31 @@
-.header{
+.top-nav{
     display: flex;
   }
-  
+  img{
+    padding: 10px;
+  }
+  header{
+    display: inline-block;
+  }
+
   #toggle-nav{
-    margin-left: 200px;
+    background-color: white;
+    width: 30px;
+    display: none;
+  }
+  
+  button, button:focus{
+    outline: none;
+    background: transparent;
+    width: 60px;
+    height: 60px;
+    border: none;
+  }
+  
+  button:active{
+    outline: none;
+    background: transparent;
+    background-color: rgb(255, 255, 255);
   }
   
   .search-container{
@@ -88,16 +110,56 @@
   @media screen and (max-width: 600px) {
     .search-container {
       float: none;
+      margin: 0;
+      display: block;
     }
   
     .topnav input[type=text] {
       border: 1px solid #ccc;  
     }
+
     .logo{
       display: inline;
     }
-    .header{
-      display: block;
+    header{
+      display: inline-block;
     }
-    
-  }
+
+    nav{
+      display: none;
+      width: 100%;
+      text-align: center;
+      background-color: #D75252;
+      text-align: center;
+      padding: 0;
+    }
+  
+    nav ul{
+      display: block;
+      text-decoration: none;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0;
+    }
+  
+    nav li{
+      display: block;
+      font-family: 'myfont';
+      flex: 0;
+    }
+  
+    nav a{
+      padding-left: 200px;
+      padding-right: 200px;
+      margin: 0;
+    }
+
+    body.nav-open nav{
+    display: block;
+    }
+
+    #toggle-nav{
+    display: block;
+    width: 50px;
+    }
+}
