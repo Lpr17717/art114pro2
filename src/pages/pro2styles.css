@@ -5,7 +5,7 @@
     padding: 10px;
   }
   header{
-    display: inline-block;
+    display: block;
   }
 
   #toggle-nav{
@@ -112,14 +112,17 @@
       float: none;
       margin: 0;
       display: block;
+      width: 100px
     }
   
     .topnav input[type=text] {
       border: 1px solid #ccc;  
     }
 
-    .logo{
+    #logo{
       display: inline;
+      width: 10px;
+      padding: 0;
     }
     header{
       display: inline-block;
@@ -127,7 +130,7 @@
 
     nav{
       display: none;
-      width: 100%;
+      width: 250px;
       text-align: center;
       background-color: #D75252;
       text-align: center;
@@ -149,8 +152,6 @@
     }
   
     nav a{
-      padding-left: 200px;
-      padding-right: 200px;
       margin: 0;
     }
 
@@ -161,5 +162,6 @@
     #toggle-nav{
     display: block;
     width: 50px;
+    padding: 0;
     }
 }
