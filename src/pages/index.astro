@@ -9,20 +9,21 @@
     <title>InterestNews: Home</title>
   </head>
 
-  <header class="top-nav">
+<header class="top-nav">
 
       <div><a id="logo" href="index.html"rel="nav"><img src="src/pages/imgspro2/InterestNewsLogo.svg" alt="Interest News Logo"></a>
       </div>
       <button><img id="toggle-nav" src="src/pages/imgspro2/menuicon.svg" alt="hamburger"></button>
-    
-      <div class="search-container"><form action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
-      </div>
-</header>
+      <div><a id='logged-in' href="logout.html">Logout</a></div>
+    </header>
 
   <body class="">
+
+    <div class="search-container"><form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    </div>
 
     <main>
       <nav>
@@ -32,13 +33,15 @@
       <li><a href="transportation.astro"rel="nav">Transportation</a></li>
       <li><a href="politics.astro"rel="nav">Politics</a></li>
       <li><a href="education.astro"rel="nav">Education</a></li>
-      <li><a href="logout.astro"rel="nav">Logout</a></li>
+      <li><a id='logout' href="logout.astro"rel="nav">Logout</a></li>
       </ul>
       </nav>
     </main>
 
   <div>
     <h1>Featured News</h1>
+
+    <img class="images" src="src/pages/imgspro2/melindaunsplash.webp" alt="">
 
     <article>
       <h2>Business "Final-ly” went bankrupt</h2>

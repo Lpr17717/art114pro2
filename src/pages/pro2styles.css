@@ -3,9 +3,13 @@
   }
   img{
     padding: 10px;
+    width: 150px;
   }
   header{
     display: block;
+  }
+  .images{
+    width: 400px;
   }
 
   #toggle-nav{
@@ -13,12 +17,26 @@
     width: 30px;
     display: none;
   }
-  
+
+  #logout{
+    display: none;
+  }
+
+  #logged-in{
+    display: inline;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+  }
+
   button, button:focus{
+    padding: 0;
+    display: inline;
+    float: end;
     outline: none;
     background: transparent;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     border: none;
   }
   
@@ -30,8 +48,10 @@
   
   .search-container{
     display: inline;
-    margin-left: 300px;
     vertical-align: middle;
+    position: absolute;
+    top: 30px;
+    right: 200px;
   }
   
   .search-container a {
@@ -40,29 +60,30 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    margin: 0;
   }
   
   .search-container input[type=text] {
-    padding: 30px;
-    margin-top: 8px;
     font-size: 17px;
     border: 1px; color: black;
+    margin: 0;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
   }
   
   .search-container button {
-    vertical-align: center;
     align-items: center;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
     background: rgb(255, 254, 254);
     font-size: 17px;
     border: none;
     cursor: pointer;
+    margin: 0;
   }
   
   .search-container button:hover {
     background: #ccc;
+    margin: 0;
   }
   
   #logo{
@@ -79,19 +100,24 @@
   }
   
   nav ul{
+    text-align: center;
       display: inline;
       text-decoration: none;
   }
   
   nav li{
+    text-align: center;
+
       display: inline;
       font-family: 'myfont';
       flex: 0;
   }
   
   nav a{
+    text-align: center;
+
       margin: 30px;
-      font-size: x-large;
+      font-size: 20px;
       text-decoration: none;
       color: rgb(255, 255, 255);
   }
@@ -104,19 +130,44 @@
   
   h1{
     text-align: left;
-    margin-left: 200px;
+    margin-left: 50px;
+  }
+
+  article{
+    margin-left: 20px;
+  }
+
+  body{
+    margin: 0;
   }
   
   @media screen and (max-width: 600px) {
-    .search-container {
-      float: none;
-      margin: 0;
-      display: block;
-      width: 100px
+    h1{
+      margin-left: 10px;
     }
-  
-    .topnav input[type=text] {
-      border: 1px solid #ccc;  
+    article{
+      margin-left: 10px;
+      width: 400px;
+    }
+    .search-container {
+      position:relative;
+      display: inline;
+      top: 10px;
+      left: 5px;
+    }
+
+    .search-container input[type=text] {
+      padding: 20px;
+    }
+
+    button, button:focus{
+      padding: 0;
+      display: inline;
+      float: end;
+      margin: 0;
+    }
+    .top-nav{
+      margin: 0;
     }
 
     #logo{
@@ -125,12 +176,12 @@
       padding: 0;
     }
     header{
-      display: inline-block;
+      display: inline;
     }
 
     nav{
       display: none;
-      width: 250px;
+      width: 304px;
       text-align: center;
       background-color: #D75252;
       text-align: center;
@@ -143,7 +194,7 @@
       margin-right: auto;
       margin-left: auto;
       padding: 0;
-    }
+        }
   
     nav li{
       display: block;
@@ -161,7 +212,17 @@
 
     #toggle-nav{
     display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     width: 50px;
     padding: 0;
+    }
+
+    #logout{
+      display: inline;
+    }
+    #logged-in{
+      display: none;
     }
 }
