@@ -1,6 +1,10 @@
 .top-nav{
     display: flex;
   }
+  @font-face {
+    font-family: 'myfont';
+    src: url(imgspro2/Signika_Negative/SignikaNegative-VariableFont_wght.ttf)
+}
   img{
     padding: 10px;
     width: 150px;
@@ -9,7 +13,7 @@
     display: block;
   }
   .images{
-    width: 400px;
+    width: 600px;
     margin-right: 50px;
   }
 
@@ -28,6 +32,8 @@
     position: absolute;
     top: 50px;
     right: 40px;
+    font-family: 'myfont';
+    border: 1px;
   }
 
   button, button:focus{
@@ -108,19 +114,18 @@
   
   nav li{
     text-align: center;
-
-      display: inline;
-      font-family: 'myfont';
-      flex: 0;
+    display: inline;
+    font-family: 'myfont';
+    flex: 0;
   }
   
   nav a{
     text-align: center;
-
-      margin: 30px;
-      font-size: 20px;
-      text-decoration: none;
-      color: rgb(255, 255, 255);
+    font-family: 'myfont';
+    margin: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
   }
   
   nav a:hover{
@@ -133,15 +138,17 @@
   h1{
     text-align: left;
     margin-left: 50px;
+    font-family: 'myfont';
   }
 
 article{
-  width: 400px;
+  width: 600px;
 }
 
 .content{
   display: flex;
   margin: 40px;
+  font-family: 'myfont';
 }
 
 body{
