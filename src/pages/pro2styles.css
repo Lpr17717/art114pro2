@@ -1,9 +1,18 @@
 .top-nav{
     display: flex;
   }
+
   @font-face {
-    font-family: 'myfont';
+    font-family: 'myfont1';
     src: url(imgspro2/Signika_Negative/SignikaNegative-VariableFont_wght.ttf)
+}
+@font-face {
+  font-family: 'myfont2';
+  src: url(imgspro2/Signika_Negative/SignikaNegative-Bold.ttf)
+}
+@font-face {
+  font-family: 'myfont3';
+  src: url(imgspro2/Signika_Negative/SignikaNegative-Regular.ttf)
 }
   img{
     padding: 10px;
@@ -32,7 +41,7 @@
     position: absolute;
     top: 50px;
     right: 40px;
-    font-family: 'myfont';
+    font-family: 'myfont1';
     border: 1px;
   }
 
@@ -104,6 +113,7 @@
       width: calc(100% - 20px);
       background-color: #D75252;
       padding: 10px;
+      font-family: 'myfont2';
   }
   
   nav ul{
@@ -115,22 +125,22 @@
   nav li{
     text-align: center;
     display: inline;
-    font-family: 'myfont';
     flex: 0;
   }
   
   nav a{
     text-align: center;
-    font-family: 'myfont';
+    font-family: 'myfont1';
     margin: 30px;
     font-size: 20px;
     text-decoration: none;
     color: rgb(255, 255, 255);
+    font-family: 'myfont2';
   }
   
   nav a:hover{
-      color: #eeff00;
-      -webkit-text-stroke-width: .5px;
+      color: #FFF1A8;
+      -webkit-text-stroke-width: .1px;
       -webkit-text-stroke-color: black;
   }
 
@@ -138,17 +148,23 @@
   h1{
     text-align: left;
     margin-left: 50px;
-    font-family: 'myfont';
+    font-family: 'myfont2';
+  }
+
+  h2{
+    font-family: 'myfont3';
   }
 
 article{
   width: 600px;
+  font-family: 'myfont3';
+
 }
 
 .content{
   display: flex;
   margin: 40px;
-  font-family: 'myfont';
+  font-family: 'myfont1';
 }
 
 body{
