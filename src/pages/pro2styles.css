@@ -143,6 +143,13 @@
     width: 200px;
   }
 
+  
+
+#article1{
+  width: 400px;
+  display: inline;
+  position: relative;
+}
 
   @media screen and (max-width: 600px) {
     h1{
