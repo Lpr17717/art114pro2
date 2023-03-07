@@ -10,6 +10,7 @@
   }
   .images{
     width: 400px;
+    margin-right: 50px;
   }
 
   #toggle-nav{
@@ -94,9 +95,9 @@
   nav{
       display: inline-block;
       text-align: center;
-      width: 1440px;
+      width: calc(100% - 20px);
       background-color: #D75252;
-      padding: 10px
+      padding: 10px;
   }
   
   nav ul{
@@ -122,36 +123,32 @@
       color: rgb(255, 255, 255);
   }
   
-  a:hover{
+  nav a:hover{
       color: #eeff00;
       -webkit-text-stroke-width: .5px;
       -webkit-text-stroke-color: black;
   }
+
   
   h1{
     text-align: left;
     margin-left: 50px;
   }
 
-  body{
-    margin: 0;
-  }
-  
-  .photo{
-    display: inline-block;
-    position: relative;
-    width: 200px;
-  }
-
-  
-
-#article1{
+article{
   width: 400px;
-  display: inline;
-  position: relative;
 }
 
-  @media screen and (max-width: 600px) {
+.content{
+  display: flex;
+  margin: 40px;
+}
+
+body{
+  margin: 0;
+}
+
+  @media screen and (max-width: 700px) {
     h1{
       margin-left: 10px;
     }
@@ -235,4 +232,9 @@
     #logged-in{
       display: none;
     }
+    .content{
+      display: block;
+      margin: 40px;
+    }
+    
 }
