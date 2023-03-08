@@ -1,7 +1,6 @@
 .top-nav{
     display: flex;
   }
-
   @font-face {
     font-family: 'myfont1';
     src: url(imgspro2/Signika_Negative/SignikaNegative-VariableFont_wght.ttf)
@@ -18,6 +17,10 @@
     padding: 10px;
     width: 150px;
   }
+h2{
+  text-align: center;
+}
+
   header{
     display: block;
   }
