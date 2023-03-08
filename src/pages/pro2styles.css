@@ -62,7 +62,9 @@
     background: transparent;
     background-color: rgb(255, 255, 255);
   }
-  
+  form{
+    margin: 0;
+  }
   .search-container{
     display: inline;
     position: absolute;
